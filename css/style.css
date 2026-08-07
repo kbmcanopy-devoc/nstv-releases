@@ -533,10 +533,14 @@ flex-direction:column;
 
 /* ===== Screenshot Slider ===== */
 
-.slider{
-    position:relative;
-    width:280px;
-    margin:40px auto;
+.slide{
+    display:none;
+    width:100%;
+    border-radius:20px;
+}
+
+.slide.active{
+    display:block;
 }
 
 .slides{
