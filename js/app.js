@@ -167,3 +167,26 @@ showSlide(current);
 },3000);
 
 }
+
+/* ===== Hero Auto Preview ===== */
+
+const hero=document.getElementById("hero-image");
+
+const gallery=[
+"img/screenshot1.jpg",
+"img/screenshot2.jpg",
+"img/screenshot3.jpg",
+"img/screenshot4.jpg"
+];
+
+let i=0;
+
+setInterval(()=>{
+
+i++;
+
+if(i>=gallery.length)i=0;
+
+hero.src=gallery[i];
+
+},3000);
