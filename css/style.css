@@ -728,9 +728,7 @@ justify-content:center;
 }
 
 .slider {
-    position: relative;
-    width: min(300px, 80vw);
-    margin: 25px auto 0;
+    width: min(240px, 68vw);
 }
 
 .slides {
@@ -892,9 +890,8 @@ justify-content:center;
     }
 
     .slider {
-        width: min(285px, 78vw);
-        margin-top: 20px;
-    }
+    width: min(240px, 68vw);
+   }
 
     .slides {
         border-radius: 19px;
@@ -964,8 +961,8 @@ justify-content:center;
     }
 
     .slider {
-        width: 260px;
-    }
+    width: 220px;
+   }
 
     .nav {
         width: 36px;
