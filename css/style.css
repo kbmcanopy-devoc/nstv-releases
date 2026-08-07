@@ -535,7 +535,7 @@ flex-direction:column;
 
 .slider{
     position:relative;
-    max-width:320px;
+    width:280px;
     margin:40px auto;
 }
 
