@@ -979,3 +979,26 @@ justify-content:center;
         right: -15px;
     }
 }
+
+/* ===== Perbaikan gambar logo pada Download ===== */
+
+.download img {
+    display: block;
+    width: 180px !important;
+    height: auto !important;
+    max-width: 55vw !important;
+    margin: 25px auto !important;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+
+    .download img {
+        width: 150px !important;
+        max-width: 45vw !important;
+        margin: 20px auto !important;
+    }
+
+}
