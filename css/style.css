@@ -261,3 +261,124 @@ flex-direction:column;
 }
 
 }
+.stats{
+padding:70px 0;
+}
+
+.stat-box{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:20px;
+
+}
+
+.stat-box div{
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.08);
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.stat-box div:hover{
+
+transform:translateY(-8px);
+
+}
+
+.stat-box h2{
+
+font-size:38px;
+
+color:#22C55E;
+
+}
+
+.screenshots{
+
+padding:80px 0;
+
+}
+
+.screenshots h2{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+border-radius:18px;
+
+transition:.3s;
+
+box-shadow:0 15px 30px rgba(0,0,0,.35);
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.04);
+
+}
+
+.changelog{
+
+padding:80px 0;
+
+}
+
+.change-card{
+
+background:#1E293B;
+
+padding:35px;
+
+border-radius:20px;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.change-card ul{
+
+padding-left:20px;
+
+}
+
+.change-card li{
+
+margin:15px 0;
+
+color:#CBD5E1;
+
+}
