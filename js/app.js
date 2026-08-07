@@ -117,3 +117,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/* ===== Screenshot Slider ===== */
+
+const slides=document.querySelectorAll(".slide");
+const next=document.querySelector(".next");
+const prev=document.querySelector(".prev");
+
+if(slides.length){
+
+let current=0;
+
+function showSlide(index){
+
+slides.forEach(s=>s.classList.remove("active"));
+
+slides[index].classList.add("active");
+
+}
+
+next.onclick=()=>{
+
+current++;
+
+if(current>=slides.length) current=0;
+
+showSlide(current);
+
+}
+
+prev.onclick=()=>{
+
+current--;
+
+if(current<0) current=slides.length-1;
+
+showSlide(current);
+
+}
+
+setInterval(()=>{
+
+current++;
+
+if(current>=slides.length) current=0;
+
+showSlide(current);
+
+},3000);
+
+}
