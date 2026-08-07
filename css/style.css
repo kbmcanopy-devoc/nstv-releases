@@ -530,3 +530,52 @@ flex-direction:column;
 }
 
 }
+
+/* ===== Screenshot Slider ===== */
+
+.slider{
+    position:relative;
+    max-width:320px;
+    margin:40px auto;
+}
+
+.slides{
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+.slide{
+    width:100%;
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.nav{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#22c55e;
+    color:#fff;
+    cursor:pointer;
+    font-size:22px;
+}
+
+.prev{
+    left:-60px;
+}
+
+.next{
+    right:-60px;
+}
+
+.nav:hover{
+    background:#16a34a;
+}
